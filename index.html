@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== landing page section with navigation ===== -->
+    <section id="landing-page" style="background: url('https://www.fiware.org/wp-content/uploads/2018/09/shutterstock_280510247-min.jpg'); height: 100vh; background-size: contain;">
+        <div class="navbar">
+            <header>
+                <nav>
+                    <a href="#employee">Add Employee</a> |
+                    <a href="#vechile">Add vechile</a> |
+                    <a href="#feedback">Give Feedback</a> |
+                    <a href="#parking-pricing">Pricing</a>
+                </nav>
+            </header>
+        </div>
+    </section>
+
+    <!-- ===== employee section ===== -->
+    <section id="employee">
+        <h1>Add Employee</h1>
+        <div class="add-employee-form">
+            <form>
+                <label for="fullname">Full name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label>Gender:</label><br>
+                <input type="checkbox" id="gender-male" name="gender-male" value="male">
+                <label for="gender-male"> Male </label>
+                <input type="checkbox" id="gender-female" name="gender-female" value="female">
+                <label for="gender-female">Female</label><br><br>
+
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" required><br><br>
+
+                <label for="pwd-confirm">Confirm Password:</label><br>
+                <input type="password" id="pwd-confirm" name="pwd-confirm" required><br><br>
+
+                <label for="phone">Enter your phone number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <!-- ===== vechile section ===== -->
+    <section id="vechile">
+        <h1>Vechile Details</h1>
+        <div class="vechile-details-form">
+            <form>
+                <label for="vechile-make">Vechile Make (Company):</label><br>
+                <input type="text" id="vechile-make" name="vechile-make" required><br><br>
+
+                <label for="vechile-model">Vechile model:</label><br>
+                <input type="text" id="vechile-model" name="vechile-model" required><br><br>
+
+                <label for="vechile-type">Vechile type:</label><br>
+                <input type="text" id="vechile-type" name="vechile-type" required><br><br>
+
+                <label for="vechile-number">Vechile Number:</label><br>
+                <input type="number" id="vechile-number" name="vechile-number" pattern="[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}"><br><br>
+
+                <label for="employee-id">Employee Id</label><br>
+                <input type="number" id="employee-id" name="employee-id"><br><br>
+
+                <label for="vechile-identification">Identify your car with color , marks etc.</label><br>
+                <textarea id="vechile-identification" name="vechile-identification" rows="10" cols="30"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <!-- ===== feedback section ===== -->
+    <section id="feedback">
+        <h1>Get In Touch</h1>
+        <div class="feedback-form">
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="feedaback">Feedback</label><br>
+                <textarea id="feedaback" name="feedaback" rows="10" cols="30"></textarea><br><br>
+
+                <input type="radio" id="rating-best" name="rating" value="best">
+                <label for="rating-best">😁</label>
+                <input type="radio" id="rating-better" name="rating" value="better">
+                <label for="rating-better">😃</label>
+                <input type="radio" id="rating-good" name="rating" value="good">
+                <label for="rating-good">🙂</label>
+                <input type="radio" id="rating-bad" name="rating" value="bad">
+                <label for="rating-bad">🙁</label><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section> 
+
+
+    <br>
+    <br>
+
+    <!-- ===== pricing section ===== -->
+    <section id="parking-pricing">
+        <h1>Vechile Pricing</h1>
+        <div class="cycle-pricing">
+            <h3>Cycle</h3>
+            <div class="monthly-pricing-circle">
+                <h4>$100</h4>
+                <p>/month</p>
+            </div>
+            <div class="all-pricing">
+                <p>$5 daily</p>
+                <p>$100 monthly</p>
+                <p>$500 yearly</p>
+            </div>
+            <button type="button">Purchase Now</button>
+
+        </div>
+
+        <div class="motorcycle-pricing">
+            <h3>Motor Cycle</h3>
+            <div class="monthly-pricing-circle">
+                <h4>$200</h4>
+                <p>/month</p>
+            </div>
+            <div class="all-pricing">
+                <p>$10 daily</p>
+                <p>$200 monthly</p>
+                <p>$1000 yearly</p>
+            </div>
+            <button type="button">Purchase Now</button>
+            
+        </div>
+        <div class="four-wheeler-pricing">
+            <h3>Four Wheeler</h3>
+            <div class="monthly-pricing-circle">
+                <h4>$500</h4>
+                <p>/month</p>
+            </div>
+            <div class="all-pricing">
+                <p>$20 daily</p>
+                <p>$500 monthly</p>
+                <p>$3500 yearly</p>
+            </div>
+            <button type="button">Purchase Now</button>
+            
+        </div>
+    </section>
+
+        <!-- ===== end ===== -->
+</body>
+</html>
