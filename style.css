@@ -1,0 +1,207 @@
+html , body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white!important;
+    text-decoration: none;
+}
+
+#landing-page{
+    background: url('https://www.fiware.org/wp-content/uploads/2018/09/shutterstock_280510247-min.jpg');
+    height: 100vh;
+    background-size: contain;
+    padding: 20px;
+}
+
+header{
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.nav-links + .nav-links{
+    margin-left: 15px;
+}
+
+.nav-links {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:#45AAE3;
+    transition: width .3s;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.collapsible-button {
+    background-color: #45aae3;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+  
+  .active, .collapsible-button:hover {
+    background-color: #21668d;
+  }
+  
+  .collapsible-button:after {
+    content: '\2212';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\002B";
+  }
+  
+  .collapsible-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 18px;
+    max-height: 100vh;
+    overflow: hidden;
+    transition: max-height 0.5s linear;
+    background-color: transparent;
+  }
+
+
+
+
+  input:not([type=checkbox],[type=radio],[type=submit]){
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #175f88;
+    margin-top: 9px;
+  }
+
+  input[type=checkbox],[type=radio]{
+      margin-top: 9px;
+      width: 30px;
+      height: 20px;
+  }
+
+  .submit-button{
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #21678e;
+    border: none;
+    border-radius: 5px;
+  }
+
+  textarea{
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #175f88;
+    margin-top: 9px;
+  }
+
+
+
+
+  .pricing-header{
+    background-color: #45aae3;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    margin: 20px 0px;
+  }
+
+  .pricing-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .pricing-box{
+    border: 2px solid #175f88;
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .monthly-pricing-circle{
+    border: 2px solid #0f425e;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .monthly-pricing-circle > h1{
+      margin: 20px 0px 0px 0px;
+      font-size: 30px;
+  }
+
+  .monthly-pricing-circle > p{
+      margin: 10px 0px 20px 0px;
+  }
+
+  .all-pricing{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0px;
+      color: #21678e;
+  }
+
+  .all-pricing > p{
+      margin: 5px;
+  }
+
+  .purchase-button{
+    margin: 5px 0px 20px 0px;
+    height: 45px;
+    width: 140px;
+    background-color: white;
+    border: 3px solid #347498;
+    border-radius: 10px;
+    color: #12425d;
+    font-size: 15px;
+  }
+
+
+  
